@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/AccountingClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/MongoConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/MongoStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/ResourcesConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/YAMLReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/YAMLReaderInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/HistoryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoAccessInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoCreateInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/other/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MongoAccessTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MongoStartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReadersTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.6.2/mongo-java-driver-2.6.2.jar!/com/mongodb/WriteConcern.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../../Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../../Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/util/UUID.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2plKe488ULMAuO7Xw4NlNqV9wK6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MongoStartTest.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AccountingClientTest.executor": "Run",
+    "JUnit.AccountingClientTest.logBasicSystemInfo.executor": "Run",
+    "JUnit.MongoAccessTest.HistoryTest.executor": "Run",
+    "JUnit.MongoAccessTest.executor": "Run",
+    "JUnit.ReadersTest.PropertiesTest.executor": "Run",
+    "JUnit.ReadersTest.XMLMapTest.executor": "Run",
+    "JUnit.ReadersTest.XMLTest.executor": "Run",
+    "JUnit.ReadersTest.YAMLMapTest.executor": "Run",
+    "JUnit.ReadersTest.executor": "Run",
+    "JUnit.XMLReaderTest.map_test.executor": "Debug",
+    "JUnit.XMLReaderTest.test.executor": "Debug",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/d.kostukov/OneDrive - Южный Федеральный Университет/архитектура/Accounting",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.45517242",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MongoAccessTest.HistoryTest">
+    <configuration name="MongoStartTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MongoStartTest" />
+      <module name="Accounting" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoAccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoAccessTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoAccessTest.HistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoAccessTest" />
+      <option name="METHOD_NAME" value="HistoryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadersTest.YAMLMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadersTest" />
+      <option name="METHOD_NAME" value="YAMLMapTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MongoAccessTest.HistoryTest" />
+        <item itemvalue="JUnit.MongoAccessTest" />
+        <item itemvalue="JUnit.ReadersTest.YAMLMapTest" />
+        <item itemvalue="Application.MongoStartTest" />
+        <item itemvalue="JUnit.ReadersTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="" />
+      <created>1733335314215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733335314215</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/MongoAccessTest.java</url>
+          <line>10</line>
+          <properties class="MongoAccessTest" method="accessTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/HistoryContent.java</url>
+          <line>73</line>
+          <properties class="ru.sfedu.accounting.mongoAPI.HistoryContent" method="getMap">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
