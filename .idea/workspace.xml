@@ -4,45 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/AccountingClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/MongoConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/MongoStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/ResourcesConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/YAMLReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/YAMLReaderInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/HistoryContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoAccessInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoCreate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoCreateInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/other/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MongoAccessTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MongoStartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ReadersTest.java" afterDir="false" />
+    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +153,28 @@
       <option name="presentableId" value="Default" />
       <updated>1733335314215</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1734795074232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734795074232</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1734795153740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734795153740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
