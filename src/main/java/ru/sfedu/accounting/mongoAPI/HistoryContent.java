@@ -6,8 +6,8 @@ import com.google.gson.Gson;
 import com.mongodb.client.MongoCollection;
 import org.apache.log4j.Logger;
 import org.bson.Document;
-import ru.sfedu.accounting.Constants.MongoConstants;
 import ru.sfedu.accounting.Constants.MongoStatus;
+import ru.sfedu.accounting.Constants.ResourcesConstants;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -20,7 +20,7 @@ public class HistoryContent<T> {
     UUID uuid;
     String className;
     Date createdDate;
-    String actor = MongoConstants.SYSTEM;
+    String actor = ResourcesConstants.SYSTEM;
     String methodName;
     Map<String, Object> objectState;
     MongoStatus status;

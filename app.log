@@ -54,3 +54,25 @@
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@78aa1f72
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@3ddc6915
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@1b8a29df
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@6fa34d52
+12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
+12.22:12.45.19 INFO	ru.sfedu.accounting.FileDB.ICreate:21 - java.io.IOException: table
+12.22:12.46.14 INFO	ru.sfedu.accounting.FileDB.ICreate:21 - java.io.IOException: table
+12.22:16.23.48 INFO	ru.sfedu.accounting.FileDB.IWrite:35 - количество атрибутов не совпадает
+12.22:16.24.05 INFO	ru.sfedu.accounting.FileDB.IWrite:35 - количество атрибутов не совпадает
+12.22:16.25.16 INFO	ru.sfedu.accounting.FileDB.IWrite:35 - количество атрибутов не совпадает
+12.22:17.02.36 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.03.18 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.03.30 INFO	ru.sfedu.accounting.FileDB.TableChecker:18 - tableis not exist
+12.22:17.03.30 INFO	ru.sfedu.accounting.FileDB.IRead:30 - java.io.IOException: table
+12.22:17.04.09 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.04.22 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.06.51 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.12.26 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.12.38 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.22:17.12.43 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table

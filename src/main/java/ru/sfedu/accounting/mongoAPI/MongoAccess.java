@@ -7,7 +7,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.apache.log4j.Logger;
 import org.bson.Document;
-import ru.sfedu.accounting.Constants.MongoConstants;
 import ru.sfedu.accounting.Constants.ResourcesConstants;
 import ru.sfedu.accounting.YAMLReader;
 
@@ -62,7 +61,7 @@ public class MongoAccess implements MongoAccessInterface{
     }
     public MongoDatabase getDatabase(){
         MongoClient connection = this.getClient();
-        MongoDatabase mongoDatabase = connection.getDatabase(MongoConstants.MONGO_DB);
+        MongoDatabase mongoDatabase = connection.getDatabase(ResourcesConstants.MONGO_DB);
         return mongoDatabase;
     }
     public MongoCollection<Document> getCollection(){
@@ -73,8 +72,9 @@ public class MongoAccess implements MongoAccessInterface{
         if(MongoAccess.connection != null) {
             MongoAccess.connection.close();
             MongoAccess.connection = null;
+            return true;
         }
-        return true;
+        return false;
     }
 
 
