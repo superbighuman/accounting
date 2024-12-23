@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/CSVCreate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/CSVRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/CSVWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/MongoConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/MongoConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/ResourcesConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/ResourcesConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/HistoryContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/HistoryContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/MongoAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReadersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadersTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="second commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "superbighuman"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;superbighuman&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/superbighuman/accounting.git",
-    "accountId": "0786dc71-e134-4f4b-85cf-a7890a1ea72d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/superbighuman/accounting.git&quot;,
+    &quot;accountId&quot;: &quot;0786dc71-e134-4f4b-85cf-a7890a1ea72d&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.6.2/mongo-java-driver-2.6.2.jar!/com/mongodb/WriteConcern.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../../Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
@@ -76,43 +56,43 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MongoStartTest.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.AccountingClientTest.executor": "Run",
-    "JUnit.AccountingClientTest.logBasicSystemInfo.executor": "Run",
-    "JUnit.DataProviderCreate.csvCreate.executor": "Debug",
-    "JUnit.DataProviderCreateTest.csvCreate.executor": "Run",
-    "JUnit.DataProviderTest.csvDelete.executor": "Debug",
-    "JUnit.DataProviderTest.csvInsert.executor": "Run",
-    "JUnit.DataProviderTest.csvReadAttrs.executor": "Run",
-    "JUnit.DataProviderTest.executor": "Run",
-    "JUnit.MongoAccessTest.HistoryTest.executor": "Run",
-    "JUnit.MongoAccessTest.executor": "Run",
-    "JUnit.ReadersTest.PropertiesTest.executor": "Run",
-    "JUnit.ReadersTest.XMLMapTest.executor": "Run",
-    "JUnit.ReadersTest.XMLTest.executor": "Run",
-    "JUnit.ReadersTest.YAMLMapTest.executor": "Run",
-    "JUnit.ReadersTest.executor": "Run",
-    "JUnit.XMLReaderTest.map_test.executor": "Debug",
-    "JUnit.XMLReaderTest.test.executor": "Debug",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/d.kostukov/OneDrive - Южный Федеральный Университет/архитектура/Accounting",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.45517242",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MongoStartTest.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AccountingClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountingClientTest.logBasicSystemInfo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderCreate.csvCreate.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.DataProviderCreateTest.csvCreate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderTest.csvDelete.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.DataProviderTest.csvInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderTest.csvReadAttrs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MongoAccessTest.HistoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MongoAccessTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.PropertiesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.XMLMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.XMLTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.YAMLMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.XMLReaderTest.map_test.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.XMLReaderTest.test.executor&quot;: &quot;Debug&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d.kostukov/OneDrive - Южный Федеральный Университет/архитектура/Accounting&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.45517242&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -217,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734795497042</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1734966876055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734966876055</updated>
+    </task>
+    <task id="LOCAL-00005" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1734966942634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734966942634</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,17 +229,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/CSVDelete.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>

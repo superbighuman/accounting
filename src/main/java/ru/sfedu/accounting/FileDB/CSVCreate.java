@@ -1,6 +1,7 @@
 package ru.sfedu.accounting.FileDB;
 
 import com.opencsv.CSVWriter;
+import ru.sfedu.accounting.Constants.ResourcesConstants;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +9,7 @@ import java.io.IOException;
 
 public class CSVCreate implements ICreate{
     public boolean createTable(String name, String[] attrs){
-        String path = "src/main/resources";
+        String path = ResourcesConstants.RESOURCES_PATH;
         String newPath = path + "/" + name + ".csv";
         FileWriter fileWriter;
         try {
