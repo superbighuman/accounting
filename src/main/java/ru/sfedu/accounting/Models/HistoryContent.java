@@ -1,4 +1,4 @@
-package ru.sfedu.accounting.mongoAPI;
+package ru.sfedu.accounting.Models;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.bson.Document;
 import ru.sfedu.accounting.Constants.MongoStatus;
 import ru.sfedu.accounting.Constants.ResourcesConstants;
+import ru.sfedu.accounting.mongoAPI.MongoAccess;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

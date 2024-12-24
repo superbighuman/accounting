@@ -23,43 +23,43 @@
         "
 12.14:13.05.54 INFO	ru.sfedu.accounting.XMLReader:34 - java.lang.IllegalArgumentException: InputStream cannot be null
 12.14:13.05.54 INFO	ru.sfedu.accounting.PropertiesReader:28 - java.io.IOException: src/main/resources/properties_example.properties
-12.20:11.38.20 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getName()
-12.20:11.38.20 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getSurname()
-12.20:11.39.29 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getName()
-12.20:11.39.29 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getSurname()
-12.20:11.45.04 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getName()
-12.20:11.45.04 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getSurname()
-12.20:11.46.45 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.IllegalAccessException: class ru.sfedu.accounting.mongoAPI.HistoryContent cannot access a member of class MongoAccessTest$Example with modifiers "public"
-12.20:11.46.45 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.IllegalAccessException: class ru.sfedu.accounting.mongoAPI.HistoryContent cannot access a member of class MongoAccessTest$Example with modifiers "public"
-12.20:11.47.33 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of MongoAccessTest$Example
-12.20:11.47.33 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of MongoAccessTest$Example
-12.20:11.49.27 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of Example
-12.20:11.49.27 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of Example
+12.20:11.38.20 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getName()
+12.20:11.38.20 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getSurname()
+12.20:11.39.29 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getName()
+12.20:11.39.29 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getSurname()
+12.20:11.45.04 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getName()
+12.20:11.45.04 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.NoSuchMethodException: MongoAccessTest$Example.getSurname()
+12.20:11.46.45 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.IllegalAccessException: class ru.sfedu.accounting.Models.HistoryContent cannot access a member of class MongoAccessTest$Example with modifiers "public"
+12.20:11.46.45 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.IllegalAccessException: class ru.sfedu.accounting.Models.HistoryContent cannot access a member of class MongoAccessTest$Example with modifiers "public"
+12.20:11.47.33 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of MongoAccessTest$Example
+12.20:11.47.33 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of MongoAccessTest$Example
+12.20:11.49.27 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of Example
+12.20:11.49.27 INFO	ru.sfedu.accounting.Models.HistoryContent:89 - java.lang.IllegalArgumentException: object of type java.lang.Class is not an instance of Example
 12.20:11.50.24 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
-12.20:11.50.24 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@379614be
-12.20:11.50.24 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@658c5a19
-12.20:11.50.24 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@78a773fd
+12.20:11.50.24 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@379614be
+12.20:11.50.24 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@658c5a19
+12.20:11.50.24 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@78a773fd
 12.20:13.20.11 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
 12.20:13.23.09 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
 12.21:18.19.10 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
-12.21:18.19.11 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@1acaf3d
-12.21:18.19.11 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@389c4eb1
-12.21:18.19.11 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@6d7fc27
+12.21:18.19.11 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@1acaf3d
+12.21:18.19.11 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@389c4eb1
+12.21:18.19.11 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@6d7fc27
 12.21:18.21.46 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
-12.21:18.21.46 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@4f74980d
+12.21:18.21.46 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@4f74980d
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
-12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@2a3888c1
+12.21:18.23.19 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@2a3888c1
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
-12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@b83a9be
+12.21:18.23.19 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@b83a9be
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
-12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@78aa1f72
+12.21:18.23.19 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@78aa1f72
 12.21:18.23.19 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:33 - mongodb://localhost:27017
 12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
-12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@3ddc6915
+12.22:11.37.01 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@3ddc6915
 12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
-12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@1b8a29df
+12.22:11.37.01 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@1b8a29df
 12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
-12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.HistoryContent:60 - ru.sfedu.accounting.mongoAPI.HistoryContent@6fa34d52
+12.22:11.37.01 INFO	ru.sfedu.accounting.Models.HistoryContent:60 - ru.sfedu.accounting.Models.HistoryContent@6fa34d52
 12.22:11.37.01 INFO	ru.sfedu.accounting.mongoAPI.MongoAccess:32 - mongodb://localhost:27017
 12.22:12.45.19 INFO	ru.sfedu.accounting.FileDB.ICreate:21 - java.io.IOException: table
 12.22:12.46.14 INFO	ru.sfedu.accounting.FileDB.ICreate:21 - java.io.IOException: table

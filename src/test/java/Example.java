@@ -1,4 +1,4 @@
-import ru.sfedu.accounting.mongoAPI.HistoryContent;
+import ru.sfedu.accounting.Models.HistoryContent;
 
 public class Example{
         String name;
