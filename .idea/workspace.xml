@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/PermanentMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Processor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/RAM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Repair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/RepairService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Technic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PSQLConn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/mongoAPI/HistoryContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/HistoryContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/ResourcesConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/ResourcesConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PostgresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostgresTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReadersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735029407548</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1735106257702</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735106257702</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

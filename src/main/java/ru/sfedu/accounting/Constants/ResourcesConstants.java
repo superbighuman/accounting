@@ -18,4 +18,7 @@ public class ResourcesConstants {
     public final static String SYSTEM = "system";
     public final static String MONGO_DB = "test";
     public final static String RESOURCES_PATH="src/main/resources/";
+    public final static String POSTGRES_HOST = "postgres_host";
+    public final static String POSTGRES_PASSWORD =  "postgres_password";
+    public final static String POSTGRES_USER = "postgres_user";
 }
