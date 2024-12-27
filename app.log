@@ -76,3 +76,18 @@
 12.22:17.12.26 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
 12.22:17.12.38 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
 12.22:17.12.43 INFO	ru.sfedu.accounting.FileDB.ICreate:20 - java.io.IOException: table
+12.27:10.21.10 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:24 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "exist"
+  Позиция: 21
+12.27:10.21.25 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:24 - org.postgresql.util.PSQLException: Запрос не вернул результатов.
+12.27:10.23.58 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:20 - create table if not exists initTest (name text,id integer)
+12.27:10.23.59 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:25 - org.postgresql.util.PSQLException: Запрос не вернул результатов.
+12.27:10.25.21 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:20 - create table if not exists initTest (name text,id integer)
+12.27:10.25.26 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:20 - create table if not exists initTest (name text,id integer)
+12.27:11.28.46 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:50 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Позиция: 28
+12.27:11.33.32 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:57 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Позиция: 32
+12.27:11.34.18 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:57 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "user"
+  Позиция: 31
+12.27:11.36.03 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:57 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "ON"
+  Позиция: 253

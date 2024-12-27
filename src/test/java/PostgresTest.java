@@ -1,5 +1,6 @@
 import org.junit.Test;
 import ru.sfedu.accounting.Constants.ResourcesConstants;
+import ru.sfedu.accounting.PostgresAPI.Create;
 import ru.sfedu.accounting.YAMLReader;
 
 import java.sql.*;
@@ -26,5 +27,20 @@ public class PostgresTest {
         }
         rs.close();
         st.close();
+    }
+    @Test
+    public void initTest(){
+        Create create = new Create();
+        String initTable = "initTest";
+        Map<String, String> attr = new HashMap<>();
+        attr.put("id", "integer");
+        attr.put("name", "text");
+        System.out.println(create.createTable(initTable, attr));
+    }
+    @Test
+    public void userCreateTable(){
+        Create create = new Create();
+        System.out.println(create.createUserTable());
+        System.out.println(create.createUpdatingTrigger());
     }
 }

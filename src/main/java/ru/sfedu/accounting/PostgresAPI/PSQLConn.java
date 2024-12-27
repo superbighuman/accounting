@@ -14,29 +14,47 @@ public class PSQLConn implements IPSQLConn{
     Connection conn;
     @Override
     public Connection getConnection() {
-        Map<String, Object> keys = new YAMLReader(ResourcesConstants.API_KEYS).getContent();
-        String url = (String) keys.get(ResourcesConstants.POSTGRES_HOST);
-        String user = (String) keys.get(ResourcesConstants.POSTGRES_USER);
-        String password = (String) keys.get(ResourcesConstants.POSTGRES_PASSWORD);
-        Properties props = new Properties();
-        props.setProperty("user", user);
-        props.setProperty("password", password);
-        Connection conn;
+        if (this.conn == null) {
+            Map<String, Object> keys = new YAMLReader(ResourcesConstants.API_KEYS).getContent();
+            String url = (String) keys.get(ResourcesConstants.POSTGRES_HOST);
+            String user = (String) keys.get(ResourcesConstants.POSTGRES_USER);
+            String password = (String) keys.get(ResourcesConstants.POSTGRES_PASSWORD);
+            Properties props = new Properties();
+            props.setProperty("user", user);
+            props.setProperty("password", password);
+            Connection conn;
+            try {
+                conn = DriverManager.getConnection(url, props);
+            } catch (SQLException e) {
+                logger.info(e);
+                throw new RuntimeException(e);
+            }
+            this.conn = conn;
+        }
+        return this.conn;
+    }
+    public boolean closeConnection(Connection conn) {
         try {
-            conn = DriverManager.getConnection(url, props);
+            conn.close();
+            return true;
         } catch (SQLException e) {
             logger.info(e);
-            throw new RuntimeException(e);
+            return false;
         }
-        this.conn = conn;
-        return conn;
     }
-    @Override
-    public boolean closeConnection() {
-        return false;
+    public boolean closeConnection(){
+        return closeConnection(this.conn);
+    }
+    public Statement getStatement(Connection conn) {
+       try {
+           return conn.createStatement();
+       }
+       catch (SQLException e) {
+           logger.info(e);
+           throw new RuntimeException("Connection closed");
+       }
     }
     public Statement getStatement(){
-        if (this.conn != null)
-            return this.conn.createStatement();
+        return getStatement(getConnection());
     }
 }
