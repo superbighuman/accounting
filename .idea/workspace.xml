@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="add models">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IPSQLConn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" afterDir="false" />
+    <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="improve psql">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Delete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PSQLConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PSQLConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostgresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostgresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -255,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735201253881</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="improve psql">
+      <option name="closed" value="true" />
+      <created>1735293747234</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735293747234</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +278,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="add psql" />
-    <option name="LAST_COMMIT_MESSAGE" value="add psql" />
+    <MESSAGE value="improve psql" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve psql" />
   </component>
 </project>
