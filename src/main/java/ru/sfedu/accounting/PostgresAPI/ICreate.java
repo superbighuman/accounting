@@ -6,8 +6,8 @@ import java.util.Map;
 
 public interface ICreate {
     Logger logger = Logger.getLogger(ICreate.class);
-    public boolean createTable(String name, Map<String, String> attributes);
+    public boolean createTable( Map<String, String> attributes);
     public boolean initialisation();
-    public boolean addKey(String tableFrom, String tableTo, String attr, String foreignKey);
+    public boolean addKey(String tableFrom, String attr, String foreignKey);
 
 }

@@ -1,6 +1,7 @@
 import org.junit.Test;
 import ru.sfedu.accounting.Constants.ResourcesConstants;
 import ru.sfedu.accounting.PostgresAPI.Create;
+import ru.sfedu.accounting.PostgresAPI.Read;
 import ru.sfedu.accounting.YAMLReader;
 
 import java.sql.*;
@@ -30,17 +31,27 @@ public class PostgresTest {
     }
     @Test
     public void initTest(){
-        Create create = new Create();
         String initTable = "initTest";
+        Create create = new Create(initTable);
         Map<String, String> attr = new HashMap<>();
         attr.put("id", "integer");
         attr.put("name", "text");
-        System.out.println(create.createTable(initTable, attr));
+        System.out.println(create.createTable( attr));
     }
     @Test
     public void userCreateTable(){
-        Create create = new Create();
+        String table = "users";
+        Create create = new Create(table);
         System.out.println(create.createUserTable());
         System.out.println(create.createUpdatingTrigger());
+    }
+    @Test
+    public void testTableSelect() throws SQLException {
+        String table = "test";
+        Read read = new Read(table);
+        ResultSet set = read.selectAll().get();
+        while(set.next()){
+            System.out.println(set.getString(1));
+        }
     }
 }

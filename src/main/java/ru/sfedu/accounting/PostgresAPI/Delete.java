@@ -3,12 +3,16 @@ package ru.sfedu.accounting.PostgresAPI;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Delete implements IDelete{
+public class Delete extends PostgresBaseClass implements IDelete{
+    public Delete(String relation) {
+        super(relation);
+    }
+
     @Override
-    public boolean dropTable(String table) {
+    public boolean dropTable() {
         PSQLConn psqlConn = new PSQLConn();
         Statement statement = psqlConn.getStatement();
-        String query = String.format("drop table if exists %s", table);
+        String query = String.format("drop table if exists %s", relation);
         try {
             statement.execute(query);
             return true;
@@ -18,12 +22,12 @@ public class Delete implements IDelete{
     }
 
     @Override
-    public boolean truncateTable(String table) {
+    public boolean truncateTable() {
         return false;
     }
 
     @Override
-    public boolean deleteRecord(String table, String key) {
+    public boolean deleteRecord(String key) {
         return false;
     }
 }

@@ -1,5 +1,7 @@
 package ru.sfedu.accounting.Models;
 
+import ru.sfedu.accounting.PostgresAPI.Create;
+
 import java.util.Date;
 
 public class User {
@@ -9,6 +11,13 @@ public class User {
     private String workingPlace;
     private Date created;
     private Date updated;
+    private Create userCreate;
+    public User(String INN, String name, String surname, String workingPlace){
+        this.INN = INN;
+        this.name = name;
+        this.surname = surname;
+        this.workingPlace = workingPlace;
+    }
 
     // Геттеры
     public String getINN() {

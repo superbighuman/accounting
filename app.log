@@ -91,3 +91,5 @@
   Позиция: 31
 12.27:11.36.03 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:57 - org.postgresql.util.PSQLException: ERROR: syntax error at or near "ON"
   Позиция: 253
+01.06:15.11.35 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:63 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.06:15.12.01 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:63 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists

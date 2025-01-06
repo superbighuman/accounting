@@ -4,12 +4,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Map;
 
-public class Create implements ICreate{
+public class Create extends PostgresBaseClass implements ICreate{
+    public Create(String relation) {
+        super(relation);
+    }
     @Override
-    public boolean createTable(String name, Map<String, String> attributes) {
+    public boolean createTable(Map<String, String> attributes) {
         PSQLConn psqlConn = new PSQLConn();
         Statement statement = psqlConn.getStatement();
-        String executableString = String.format("create table if not exists %s (",name);
+        String executableString = String.format("create table if not exists %s (",relation);
         for(String attr: attributes.keySet()){
             String datatype = attributes.get(attr);
             executableString += attr + " " + datatype + ",";
@@ -33,7 +36,7 @@ public class Create implements ICreate{
     }
 
     @Override
-    public boolean addKey(String tableFrom, String tableTo, String attr, String foreignKey) {
+    public boolean addKey(String tableFrom, String attr, String foreignKey) {
         return false;
     }
     public boolean createUpdatingTrigger(){

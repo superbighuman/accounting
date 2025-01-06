@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="improve psql">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Delete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PostgresBaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PostgresCRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PostgresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostgresTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +91,7 @@
     "JUnit.MongoAccessTest.executor": "Run",
     "JUnit.PostgresTest.initTest.executor": "Run",
     "JUnit.PostgresTest.testConnection.executor": "Run",
+    "JUnit.PostgresTest.testTableSelect.executor": "Run",
     "JUnit.PostgresTest.userCreateTable.executor": "Run",
     "JUnit.ReadersTest.PropertiesTest.executor": "Run",
     "JUnit.ReadersTest.XMLMapTest.executor": "Run",
@@ -94,7 +109,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/d.kostukov/OneDrive - Южный Федеральный Университет/архитектура/Accounting",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45517242",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -111,16 +126,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostgresTest.userCreateTable">
-    <configuration name="DataProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Accounting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DataProviderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PostgresTest.testTableSelect">
     <configuration name="DataProviderTest.csvDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Accounting" />
       <option name="PACKAGE_NAME" value="" />
@@ -151,6 +157,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostgresTest.testTableSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PostgresTest" />
+      <option name="METHOD_NAME" value="testTableSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostgresTest.userCreateTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Accounting" />
       <option name="PACKAGE_NAME" value="" />
@@ -163,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostgresTest.testTableSelect" />
         <item itemvalue="JUnit.PostgresTest.userCreateTable" />
         <item itemvalue="JUnit.PostgresTest.initTest" />
         <item itemvalue="JUnit.PostgresTest.testConnection" />
         <item itemvalue="JUnit.DataProviderTest.csvDelete" />
-        <item itemvalue="JUnit.DataProviderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735293747234</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="improve psql">
+      <option name="closed" value="true" />
+      <created>1735309385407</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735309385407</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
