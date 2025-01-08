@@ -1,12 +1,18 @@
 package ru.sfedu.accounting.PostgresAPI;
 
+import ru.sfedu.accounting.Models.Model;
+
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Map;
 
 public class Create extends PostgresBaseClass implements ICreate{
+    protected String createQuery = "CREATE TABLE RELATION (...)";
+    protected String insertQuery = "INSERT INTO RELATION VALUES (...)";
     public Create(String relation) {
         super(relation);
+        insertQuery = insertQuery.replace(RELATION_PLACE_HOLDER, relation);
     }
     @Override
     public boolean createTable(Map<String, String> attributes) {
@@ -85,8 +91,21 @@ public class Create extends PostgresBaseClass implements ICreate{
             logger.info(e);
             return false;
         }
-
-
+    }
+    public boolean insertRecord(Model model){
+        ArrayList<String> values = model.getFields();
+        PSQLConn conn = new PSQLConn();
+        Statement statement = conn.getStatement();
+        String newInsertQuery = insertQuery;
+        newInsertQuery = newInsertQuery.replace(ATTRIBUTES_PLACE_HOLDER, String.join(", ", values));
+        try {
+            statement.executeQuery(newInsertQuery);
+            return true;
+        }
+        catch (Exception e){
+            logger.info(e);
+            return false;
+        }
     }
 
 
