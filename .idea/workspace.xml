@@ -10,16 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="improve psql">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PostgresBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PostgresBaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PostgresCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PostgresCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736175624177</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="improve psql">
+      <option name="closed" value="true" />
+      <created>1736348109450</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736348109450</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
