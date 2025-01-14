@@ -93,7 +93,7 @@ public class Create extends PostgresBaseClass implements ICreate{
         }
     }
     public boolean insertRecord(Model model){
-        ArrayList<String> values = model.getFields();
+        ArrayList<String> values = model.getFieldsValues();
         PSQLConn conn = new PSQLConn();
         Statement statement = conn.getStatement();
         String newInsertQuery = insertQuery;

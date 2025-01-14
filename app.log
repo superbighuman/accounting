@@ -147,3 +147,58 @@
 01.08:14.28.12 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
 01.08:14.28.13 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
   Подробности: Key (inn)=(123456789012) already exists.
+01.09:08.40.26 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:08.40.26 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:08.40.26 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.09:08.40.26 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:08.40.26 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:08.40.26 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.09:08.40.36 INFO	ru.sfedu.accounting.PostgresAPI.IPSQLConn:29 - org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+01.09:10.55.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:10.55.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:10.55.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.09:10.55.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:10.55.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.09:10.55.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.09:10.55.29 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Подробности: Key (inn)=(123456789012) already exists.
+01.10:11.53.55 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.53.55 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.53.55 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.53.55 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.53.55 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.53.55 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.53.55 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Подробности: Key (inn)=(123456789012) already exists.
+01.10:11.55.20 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.55.20 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.55.20 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.55.20 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.55.20 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.55.20 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.55.20 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Подробности: Key (inn)=(123456789012) already exists.
+01.10:11.56.10 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.10 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.10 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.56.10 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.10 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.10 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.56.10 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Подробности: Key (inn)=(123456789012) already exists.
+01.10:11.56.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.56.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.56.28 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.56.29 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Подробности: Key (inn)=(123456789012) already exists.
+01.10:11.57.31 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.57.31 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.57.31 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.57.31 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.57.31 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.10:11.57.31 INFO	ru.sfedu.accounting.Models.Model:35 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUserCreate()
+01.10:11.57.31 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:106 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "users_pkey"
+  Подробности: Key (inn)=(123456789012) already exists.

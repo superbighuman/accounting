@@ -24,9 +24,11 @@ public class Read extends PostgresBaseClass implements IRead {
         ResultSet resultSet = null;
         try {
             resultSet = statement.executeQuery(newQuery);
+            psqlConn.closeConnection();
             return Optional.of(resultSet);
         } catch (SQLException e) {
             logger.info(e);
+            psqlConn.closeConnection();
             return Optional.empty();
         }
     }
@@ -37,9 +39,11 @@ public class Read extends PostgresBaseClass implements IRead {
         String newQuery = selectQuery.replace(ATTRIBUTES_PLACE_HOLDER, attr);
         try {
             ResultSet resultSet = statement.executeQuery(newQuery);
+            psqlConn.closeConnection();
             return Optional.of(resultSet);
         } catch (SQLException e) {
             logger.info(e);
+            psqlConn.closeConnection();
             return Optional.empty();
         }
     }
@@ -50,9 +54,11 @@ public class Read extends PostgresBaseClass implements IRead {
         String newQuery = selectQuery.replace(ATTRIBUTES_PLACE_HOLDER, String.join(", ", attrs));
         try {
             ResultSet resultSet = statement.executeQuery(newQuery);
+            psqlConn.closeConnection();
             return Optional.of(resultSet);
         } catch (SQLException e) {
             logger.info(e);
+            psqlConn.closeConnection();
             return Optional.empty();
         }
     }
@@ -65,9 +71,11 @@ public class Read extends PostgresBaseClass implements IRead {
         newQuery = newQuery.replace(WHERE_CONDITIONAL, key + "=" + whereValue);
         try {
             ResultSet resultSet = statement.executeQuery(newQuery);
+            psqlConn.closeConnection();
             return Optional.of(resultSet);
         } catch (SQLException e) {
             logger.info(e);
+            psqlConn.closeConnection();
             return Optional.empty();
         }
     }
@@ -82,9 +90,11 @@ public class Read extends PostgresBaseClass implements IRead {
         newQuery = newQuery.replace(WHERE_CONDITIONAL, key + "=" + whereValue);
         try {
             ResultSet resultSet = statement.executeQuery(newQuery);
+            psqlConn.closeConnection();
             return Optional.of(resultSet);
         } catch (SQLException e) {
             logger.info(e);
+            psqlConn.closeConnection();
             return Optional.empty();
         }
     }

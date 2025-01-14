@@ -1,12 +1,10 @@
 package ru.sfedu.accounting.Models;
 
 import org.apache.log4j.Logger;
-import ru.sfedu.accounting.PostgresAPI.PostgresCRUD;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.List;
 
 public interface Model{
     Logger logger = Logger.getLogger(Model.class);
@@ -14,7 +12,7 @@ public interface Model{
     public boolean deleteRecord();
     public boolean updateRecord();
     public boolean exists();
-    public default ArrayList<String> getFields(){
+    public default ArrayList<String> getFieldsValues(){
         Class c = this.getClass();
         Field[] fields = c.getDeclaredFields();
         ArrayList<String> result = new ArrayList<>();
@@ -35,6 +33,15 @@ public interface Model{
                 logger.info(e);
             }
         }
+        return result;
+    }
+    public default ArrayList<String> getFields(){
+        //TODO: in progress
+        Class c = this.getClass();
+        Field[] fields = c.getDeclaredFields();
+        ArrayList<String> result = new ArrayList<>();
+        for(Field field: fields)
+            result.add(field.getName());
         return result;
     }
 

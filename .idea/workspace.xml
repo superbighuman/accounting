@@ -10,9 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="improve psql">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +51,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.6.2/mongo-java-driver-2.6.2.jar!/com/mongodb/WriteConcern.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../../Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../../../Java/JavaVirtualMachines/openjdk-23.0.1/Contents/Home/lib/src.zip!/java.base/java/util/UUID.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.7.4/postgresql-42.7.4.jar!/org/postgresql/jdbc/PgResultSet.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
@@ -75,6 +80,9 @@
     &quot;JUnit.DataProviderTest.csvInsert.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DataProviderTest.csvReadAttrs.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DataProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.userExistNegative.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.userExistPositive.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ModelTest.userTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.MongoAccessTest.HistoryTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.MongoAccessTest.executor&quot;: &quot;Run&quot;,
@@ -115,42 +123,41 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModelTest.userTest">
+  <component name="RunManager" selected="JUnit.ModelTest.userExistPositive">
+    <configuration name="ModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ModelTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelTest.userExistNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ModelTest" />
+      <option name="METHOD_NAME" value="userExistNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelTest.userExistPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Accounting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ModelTest" />
+      <option name="METHOD_NAME" value="userExistPositive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ModelTest.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Accounting" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ModelTest" />
       <option name="METHOD_NAME" value="userTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostgresTest.initTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Accounting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PostgresTest" />
-      <option name="METHOD_NAME" value="initTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostgresTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Accounting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PostgresTest" />
-      <option name="METHOD_NAME" value="testConnection" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostgresTest.testTableSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Accounting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PostgresTest" />
-      <option name="METHOD_NAME" value="testTableSelect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ModelTest.userExistPositive" />
+        <item itemvalue="JUnit.ModelTest.userExistNegative" />
+        <item itemvalue="JUnit.ModelTest" />
         <item itemvalue="JUnit.ModelTest.userTest" />
         <item itemvalue="JUnit.PostgresTest.userCreateTable" />
-        <item itemvalue="JUnit.PostgresTest.testTableSelect" />
-        <item itemvalue="JUnit.PostgresTest.initTest" />
-        <item itemvalue="JUnit.PostgresTest.testConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736348109450</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="improve psql">
+      <option name="closed" value="true" />
+      <created>1736401041623</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736401041623</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,13 +330,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Model.java</url>
-          <line>39</line>
+          <line>46</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ModelTest.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

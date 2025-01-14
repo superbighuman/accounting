@@ -3,6 +3,7 @@ package ru.sfedu.accounting.Models;
 import ru.sfedu.accounting.PostgresAPI.Create;
 import ru.sfedu.accounting.PostgresAPI.PostgresCRUD;
 
+import java.sql.ResultSet;
 import java.util.Date;
 import java.util.List;
 
@@ -85,11 +86,22 @@ public class User extends PostgresCRUD implements Model{
 
     @Override
     public boolean updateRecord() {
-        return false;
+        boolean result = postgresUpdate.updateRecord(this);
+        return result;
     }
 
     @Override
     public boolean exists() {
+        ResultSet resultSet = postgresRead.where("INN", "INN",INN).get();
+        try {
+            while (resultSet.next()) {
+                if (resultSet.getString(1).equals(INN))
+                    return true;
+            }
+        }
+        catch (Exception e){
+            Model.logger.info(e);
+        }
         return false;
     }
 
