@@ -10,34 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce3c6a2-299a-4327-8bea-0d2bb51edd19" name="Changes" comment="improve psql">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/RequestStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Constants/TechnicStatuses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/FileDB/IDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Technic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/Technic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/ICreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IPSQLConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IPSQLConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/IUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PSQLConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/PSQLConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/XMLReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountingClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostgresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostgresTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReadersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,56 +59,56 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MongoStartTest.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.AccountingClientTest.executor": "Run",
-    "JUnit.AccountingClientTest.logBasicSystemInfo.executor": "Run",
-    "JUnit.DataProviderCreate.csvCreate.executor": "Debug",
-    "JUnit.DataProviderCreateTest.csvCreate.executor": "Run",
-    "JUnit.DataProviderTest.csvDelete.executor": "Debug",
-    "JUnit.DataProviderTest.csvInsert.executor": "Run",
-    "JUnit.DataProviderTest.csvReadAttrs.executor": "Run",
-    "JUnit.DataProviderTest.executor": "Run",
-    "JUnit.ModelTest.StringTest.executor": "Run",
-    "JUnit.ModelTest.deleteTest.executor": "Run",
-    "JUnit.ModelTest.executor": "Run",
-    "JUnit.ModelTest.modelFields.executor": "Run",
-    "JUnit.ModelTest.updateTest.executor": "Run",
-    "JUnit.ModelTest.userExistNegative.executor": "Run",
-    "JUnit.ModelTest.userExistPositive.executor": "Run",
-    "JUnit.ModelTest.userInsert.executor": "Debug",
-    "JUnit.ModelTest.userTest.executor": "Run",
-    "JUnit.MongoAccessTest.HistoryTest.executor": "Run",
-    "JUnit.MongoAccessTest.executor": "Run",
-    "JUnit.PostgresTest.initTest.executor": "Run",
-    "JUnit.PostgresTest.testConnection.executor": "Run",
-    "JUnit.PostgresTest.testTableSelect.executor": "Run",
-    "JUnit.PostgresTest.userCreateTable.executor": "Run",
-    "JUnit.ReadersTest.PropertiesTest.executor": "Run",
-    "JUnit.ReadersTest.XMLMapTest.executor": "Run",
-    "JUnit.ReadersTest.XMLTest.executor": "Run",
-    "JUnit.ReadersTest.YAMLMapTest.executor": "Run",
-    "JUnit.ReadersTest.executor": "Run",
-    "JUnit.XMLReaderTest.map_test.executor": "Debug",
-    "JUnit.XMLReaderTest.test.executor": "Debug",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/d.kostukov/OneDrive - Южный Федеральный Университет/архитектура/Accounting",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.45517242",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MongoStartTest.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AccountingClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AccountingClientTest.logBasicSystemInfo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderCreate.csvCreate.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.DataProviderCreateTest.csvCreate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderTest.csvDelete.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.DataProviderTest.csvInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderTest.csvReadAttrs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.StringTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.modelFields.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.updateTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.userExistNegative.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.userExistPositive.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ModelTest.userInsert.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ModelTest.userTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MongoAccessTest.HistoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MongoAccessTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostgresTest.initTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostgresTest.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostgresTest.testTableSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostgresTest.userCreateTable.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.PropertiesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.XMLMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.XMLTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.YAMLMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadersTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.XMLReaderTest.map_test.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.XMLReaderTest.test.executor&quot;: &quot;Debug&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d.kostukov/OneDrive - Южный Федеральный Университет/архитектура/Accounting&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.45517242&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -147,7 +120,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModelTest.deleteTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.sfedu.accounting.Main" />
+      <module name="Accounting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sfedu.accounting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ModelTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Accounting" />
       <option name="PACKAGE_NAME" value="" />
@@ -188,23 +174,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelTest.userInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Accounting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ModelTest" />
-      <option name="METHOD_NAME" value="userInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ModelTest.deleteTest" />
         <item itemvalue="JUnit.ModelTest.updateTest" />
         <item itemvalue="JUnit.ModelTest.userExistNegative" />
         <item itemvalue="JUnit.ModelTest.userExistPositive" />
-        <item itemvalue="JUnit.ModelTest.userInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736852799101</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="improve psql">
+      <option name="closed" value="true" />
+      <created>1737363588679</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737363588679</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,30 +341,5 @@
     <MESSAGE value="add psql" />
     <MESSAGE value="improve psql" />
     <option name="LAST_COMMIT_MESSAGE" value="improve psql" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ModelTest.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ModelTest.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/sfedu/accounting/PostgresAPI/Update.java</url>
-          <line>37</line>
-          <properties class="ru.sfedu.accounting.PostgresAPI.Update" method="prepareUpdateString">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
