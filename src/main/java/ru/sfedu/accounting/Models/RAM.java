@@ -1,8 +1,13 @@
 package ru.sfedu.accounting.Models;
 
-import java.util.Date;
+import com.sun.jdi.Method;
+import ru.sfedu.accounting.PostgresAPI.PostgresCRUD;
 
-public class RAM {
+import java.sql.ResultSet;
+import java.util.Date;
+import java.util.Map;
+
+public class RAM extends PostgresCRUD implements Model {
     private String individualNumber;
     private String name;
     private double memory;
@@ -10,6 +15,17 @@ public class RAM {
     private double speed;
     private Date created;
     private Date updated;
+
+    private static final String PRIMARY_KEY = "individualNumber";
+    private static final String RAM_RELATION = "RAM";
+    RAM(String individualNumber, String name, double memory, String type, double speed){
+        super(RAM_RELATION);
+        this.individualNumber = individualNumber;
+        this.name = name;
+        this.memory = memory;
+        this.type = type;
+        this.speed = speed;
+    }
 
     // Геттеры
     public String getIndividualNumber() {
@@ -67,5 +83,45 @@ public class RAM {
 
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+    public boolean insertRecord() {
+        boolean result = postgresCreate.insertRecord(this);
+        return result;
+    }
+
+    @Override
+    public boolean deleteRecord() {
+        boolean result = postgresDelete.deleteRecord(this);
+        return result;
+    }
+
+    @Override
+    public boolean updateRecord() {
+        boolean result = postgresUpdate.updateRecord(this);
+        return result;
+    }
+
+    @Override
+    public boolean exists() {
+        String key = keyGet();
+        Map<String, String> map = getItems();
+        String keyValue = map.get(key);
+        ResultSet resultSet = postgresRead.where(key, key, keyValue).get();
+        try {
+            while (resultSet.next()) {
+                if (resultSet.getString(1).equals(keyValue))
+                    return true;
+            }
+        }
+        catch (Exception e){
+            Model.logger.info(e);
+        }
+        return false;
+    }
+
+    @Override
+    public String keyGet() {
+        return PRIMARY_KEY;
     }
 }
