@@ -37,15 +37,21 @@ public class Create extends PostgresBaseClass implements ICreate{
             return false;
         }
     }
-    public boolean initialisation(){
-        return true;
+    public static boolean initialisation(){
+        ArrayList<Boolean> results = new ArrayList<>();
+        boolean result;
+        result = createUserTable();
+        results.add(result);
+        result = createUpdatingTrigger();
+        results.add(result);
+        return results.stream().reduce(true,(start, cur) -> (start && cur));
     }
 
     @Override
     public boolean addKey(String tableFrom, String attr, String foreignKey) {
         return false;
     }
-    public boolean createUpdatingTrigger(){
+    protected static boolean createUpdatingTrigger(){
         PSQLConn psqlConn = new PSQLConn();
         Statement statement = psqlConn.getStatement();
         String query = """
@@ -70,7 +76,7 @@ public class Create extends PostgresBaseClass implements ICreate{
             return false;
         }
     }
-    public boolean createUserTable(){
+    protected static boolean createUserTable(){
         PSQLConn psqlConn = new PSQLConn();
         Statement statement = psqlConn.getStatement();
         String query = """
@@ -78,7 +84,7 @@ public class Create extends PostgresBaseClass implements ICreate{
                      INN VARCHAR(12) PRIMARY KEY,
                      name VARCHAR(50),
                      surname VARCHAR(50),
-                     working_place VARCHAR(50),
+                     workingPlace VARCHAR(50),
                      created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                      updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                    );

@@ -1,26 +1,30 @@
 package ru.sfedu.accounting.Models;
 
-import ru.sfedu.accounting.PostgresAPI.Create;
 import ru.sfedu.accounting.PostgresAPI.PostgresCRUD;
 
 import java.sql.ResultSet;
 import java.util.Date;
-import java.util.List;
+import java.util.Map;
 
 public class User extends PostgresCRUD implements Model{
+
     private String INN;
     private String name;
     private String surname;
     private String workingPlace;
     private Date created;
     private Date updated;
-    private Create userCreate;
+    private final String PRIMARY_KEY = "INN";
+    private static final String USERS_RELATION = "Users";
     public User(String INN, String name, String surname, String workingPlace){
-        super("Users");
+        super(USERS_RELATION);
         this.INN = INN;
         this.name = name;
         this.surname = surname;
         this.workingPlace = workingPlace;
+    }
+    public String keyGet(){
+        return PRIMARY_KEY;
     }
 
     // Геттеры
@@ -81,7 +85,8 @@ public class User extends PostgresCRUD implements Model{
 
     @Override
     public boolean deleteRecord() {
-        return false;
+        boolean result = postgresDelete.deleteRecord(this);
+        return result;
     }
 
     @Override
@@ -92,10 +97,13 @@ public class User extends PostgresCRUD implements Model{
 
     @Override
     public boolean exists() {
-        ResultSet resultSet = postgresRead.where("INN", "INN",INN).get();
+        String key = keyGet();
+        Map<String, String> map = getItems();
+        String keyValue = map.get(key);
+        ResultSet resultSet = postgresRead.where(key, key, keyValue).get();
         try {
             while (resultSet.next()) {
-                if (resultSet.getString(1).equals(INN))
+                if (resultSet.getString(1).equals(keyValue))
                     return true;
             }
         }

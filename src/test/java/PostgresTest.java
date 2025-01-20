@@ -30,22 +30,6 @@ public class PostgresTest {
         st.close();
     }
     @Test
-    public void initTest(){
-        String initTable = "initTest";
-        Create create = new Create(initTable);
-        Map<String, String> attr = new HashMap<>();
-        attr.put("id", "integer");
-        attr.put("name", "text");
-        System.out.println(create.createTable( attr));
-    }
-    @Test
-    public void userCreateTable(){
-        String table = "users";
-        Create create = new Create(table);
-        System.out.println(create.createUserTable());
-        System.out.println(create.createUpdatingTrigger());
-    }
-    @Test
     public void testTableSelect() throws SQLException {
         String table = "test";
         Read read = new Read(table);
@@ -53,5 +37,11 @@ public class PostgresTest {
         while(set.next()){
             System.out.println(set.getString(1));
         }
+    }
+    @Test
+    public void initTest(){
+        boolean result = Create.initialisation();
+        System.out.println(result);
+
     }
 }
