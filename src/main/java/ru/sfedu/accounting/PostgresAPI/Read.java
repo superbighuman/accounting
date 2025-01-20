@@ -65,8 +65,6 @@ public class Read extends PostgresBaseClass implements IRead {
     public Optional<ResultSet> where(String attr, String key, Object whereValue){
         PSQLConn psqlConn = new PSQLConn();
         Statement statement = psqlConn.getStatement();
-        if (whereValue instanceof String)
-            whereValue = "'" + whereValue + "'";
         String newQuery = whereQuery.replace(ATTRIBUTES_PLACE_HOLDER, attr);
         newQuery = newQuery.replace(WHERE_CONDITIONAL, key + "=" + whereValue);
         try {

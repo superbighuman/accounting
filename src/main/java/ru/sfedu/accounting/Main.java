@@ -1,24 +1,47 @@
 package ru.sfedu.accounting;
+import org.apache.log4j.Logger;
+import ru.sfedu.accounting.Models.User;
+import ru.sfedu.accounting.PostgresAPI.Read;
+
+import java.lang.reflect.Method;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
+    private static Logger logger= Logger.getLogger(Main.class);
     private static boolean running = true;
+    private static final boolean DEBUG = true;
+
+    private static final String USERS_RELATION = "users";
     public static void main(String[] args) {
+        if (!DEBUG){
+            Logger.getRootLogger().removeAppender("stdout");
+        }
         String version = "0.1";
         String helloMessage = "Добро пожаловать в программу учета v %s,\n чтобы узнать команды, введите help".formatted(version);
         System.out.println(helloMessage);
-        while(running){
-            pooling();
-        }
+        pooling();
+
     }
-    private static void pooling(){
-        Scanner sc = new Scanner(System.in);
-        String query = sc.nextLine();
-        String[] params = query.split(" ");
-        if (params.length == 0)
-            return;
-        else if(params[0].equals("help")){
-            showHelp();
-            return;
+    private static void pooling() {
+        while (running) {
+            Scanner sc = new Scanner(System.in);
+            String query = sc.nextLine();
+            String[] params = query.split(" ");
+            if (params.length == 0)
+                return;
+            else if (params[0].equals("help")) {
+                showHelp();
+            }
+            else if (params[0].equals("user")){
+                userMenu();
+            }
         }
     }
     private static void showHelp() {
@@ -31,7 +54,7 @@ public class Main {
         String processor = "processor - добавление, изменение, удаление информации о процессорах";
         String ram = "ram - добавление, изменение, удаление информации о модулях оперативной памяти";
         String permanentMemory = "permanentMemory - добавление, изменение, удаление информации о накопителях";
-
+        String exit = "exit - возвращает на один уровень меню назад";
         System.out.println(help);
         System.out.println(user);
         System.out.println(technic);
@@ -42,6 +65,151 @@ public class Main {
         System.out.println(ram);
         System.out.println(permanentMemory);
     }
+    private static void userMenu() {
+        String add = "add (ИНН, Имя, Фамилия, Рабочее место) - добавляет нового пользователя";
+        String update = "update (ИНН, параметр, новое значение) - обновляет информацию о пользователе";
+        String delete = "delete (ИНН) - удаляет пользователя по указанному ИНН";
+        String read = "read (ИНН) - выводит информацию о пользователе с указанным ИНН";
+        String list = "list - выводит список всех пользователей";
+
+        System.out.println("Меню управления пользователями:");
+        System.out.println(add);
+        System.out.println(update);
+        System.out.println(delete);
+        System.out.println(read);
+        System.out.println(list);
+
+        while(true){
+            Scanner sc = new Scanner(System.in);
+            String line = sc.nextLine();
+            String[] query = line.split(" ");
+            boolean queryResult = false;
+            if (query.length == 0)
+                continue;
+            else if (query[0].equals("add")) {
+                queryResult = addUser(query);
+            }
+            else if (query[0].equals("list")){
+                Read PSQLRead = new Read(USERS_RELATION);
+                queryResult = !PSQLRead.select("*").isEmpty();
+                if(queryResult){
+                    Optional<ResultSet> resultSet = PSQLRead.select("*");
+                    printSelect(resultSet);
+                }
+
+            }
+            else if (query[0].equals("delete")){
+                queryResult = deleteUser(query);
+            }
+            else if(query[0].equals("update"))
+                queryResult = updateUser(query);
+            else if(query[0].equals("read"))
+                queryResult = readUser(query);
+
+            if (!queryResult){
+                System.out.println("Ошибка в записи");
+            }
+            else{
+                System.out.println("Команда успешно выполнена");
+            }
+        }
+    }
+    private static boolean addUser(String[] query){
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 4)
+            return false;
+        String inn = params.get(0);
+        String name = params.get(1);
+        String surname = params.get(2);
+        String workPlace = params.get(3);
+
+        if (isINN(inn)) {
+            User user = new User(inn, name, surname, workPlace);
+            boolean result = user.insertRecord();
+            return result;
+        }
+        return false;
+    }
+    private static boolean deleteUser(String[] query){
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 1)
+            return false;
+        String inn = params.get(0);
+        if (isINN(inn)){
+            User user = new User(inn);
+            boolean result = user.deleteRecord();
+            return result;
+        }
+        return false;
+    }
+    private static boolean updateUser(String[] query){
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 3)
+            return false;
+        String inn = params.get(0);
+        if (isINN(inn)) {
+            String attr = params.get(1);
+            String newValue = params.get(2);
+            User user = new User(inn);
+            Class c = user.getClass();
+            try {
+                Method m = c.getMethod("set" + attr.substring(0, 1).toUpperCase() + attr.substring(1), String.class);
+                m.invoke(user,newValue);
+                user.updateRecord();
+            }
+            catch (Exception e){
+                logger.info(e);
+                return false;
+            }
+            boolean result = user.updateRecord();
+            return result;
+        }
+        return false;
+    }
+    private static boolean readUser(String[] query){
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 1)
+            return false;
+        String inn = params.get(0);
+        if (isINN(inn)){
+            User user = new User(inn);
+            Read PSQLread = new Read(USERS_RELATION);
+            printSelect(PSQLread.where("*", user.keyGet(), user.getItems().get(user.keyGet())));
+            return true;
+        }
+        return false;
+    }
+    private static boolean isINN(String inn){
+        Pattern pattern = Pattern.compile("\\d{12}");
+        Matcher matcher = pattern.matcher(inn);
+        return matcher.matches();
+    }
+    private static ArrayList<String> prepareParams(String[] query){
+        ArrayList<String> params = new ArrayList<>(List.of(query));
+        ArrayList<String> result = new ArrayList<>();
+        params.remove(0);
+        params.stream().map(x ->x.replaceAll("[,(=]", "")).forEach(result::add);
+
+        return result;
+    }
+    private static void printSelect(Optional<ResultSet> resultSet){
+        if (!resultSet.isEmpty()){
+            ResultSet set = resultSet.get();
+            try {
+                int columnCount = set.getMetaData().getColumnCount();
+                while (set.next()) {
+                    for (int i = 1; i <= columnCount; i++)
+                        System.out.print(set.getString(i) + " ");
+                    System.out.println();
+                }
+
+            }
+            catch (SQLException e){
+                logger.info(e);
+            }
+        }
+    }
+
 
 
 }

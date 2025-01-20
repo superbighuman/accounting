@@ -23,6 +23,10 @@ public class User extends PostgresCRUD implements Model{
         this.surname = surname;
         this.workingPlace = workingPlace;
     }
+    public User(String inn){
+        super(USERS_RELATION);
+        this.INN = inn;
+    }
     public String keyGet(){
         return PRIMARY_KEY;
     }
