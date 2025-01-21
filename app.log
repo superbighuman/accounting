@@ -469,3 +469,98 @@
 01.21:00.01.04 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
 01.21:00.01.04 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getPRIMARY_KEY()
 01.21:00.01.04 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.User.getUSERS_RELATION()
+01.21:01.01.36 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getIsComputer()
+01.21:01.01.36 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:01.01.36 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:01.01.36 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:01.01.36 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:01.01.37 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:112 - org.postgresql.util.PSQLException: ERROR: relation "technic" does not exist
+  Позиция: 13
+01.21:12.41.12 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.41.13 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:148 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.41.13 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.43.08 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getIsComputer()
+01.21:12.43.08 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.43.08 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.43.08 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.43.08 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.44.19 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.44.21 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:148 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.44.21 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.44.33 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.44.34 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:148 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.44.34 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.46.38 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getIsComputer()
+01.21:12.46.38 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.46.38 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.46.38 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.46.38 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.46.46 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.46.48 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:148 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.46.48 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.46.53 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.46.53 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.46.53 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.46.53 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.46.54 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:163 - org.postgresql.util.PSQLException: ERROR: invalid input syntax for type timestamp: "123"
+  Позиция: 56
+01.21:12.52.38 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.52.40 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.52.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.52.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.52.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.52.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.52.59 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:164 - org.postgresql.util.PSQLException: Запрос не вернул результатов.
+01.21:12.54.48 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.54.49 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:149 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.54.49 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.55.07 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.07 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.07 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.55.07 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.55.24 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:164 - org.postgresql.util.PSQLException: Запрос не вернул результатов.
+01.21:12.55.32 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.55.34 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:149 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.55.34 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.55.40 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.40 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.40 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.55.40 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.55.41 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:164 - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "technic_pkey"
+  Подробности: Key (individualnumber)=(123) already exists.
+01.21:12.55.49 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.49 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.49 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.55.49 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.55.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.55.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.55.59 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.56.43 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.56.45 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:149 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.56.45 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.57.24 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.57.24 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.57.24 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.57.24 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:12.58.25 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:12.58.27 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:149 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:12.58.27 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:12.58.46 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.58.46 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:12.58.46 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:12.58.46 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:13.00.03 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:13.00.04 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:149 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:13.00.04 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:13.00.48 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:13.00.48 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:13.00.48 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:13.00.48 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()
+01.21:13.01.45 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:79 - org.postgresql.util.PSQLException: ERROR: trigger "update_users_updated" for relation "users" already exists
+01.21:13.01.46 INFO	ru.sfedu.accounting.PostgresAPI.ICreate:149 - org.postgresql.util.PSQLException: ERROR: trigger "update_technic_updated" for relation "technic" already exists
+01.21:13.01.46 INFO	ru.sfedu.accounting.Main:29 - Инициализация - false
+01.21:13.01.51 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:13.01.51 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NullPointerException: Cannot invoke "Object.toString()" because "valObject" is null
+01.21:13.01.51 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getTECHNIC_RELATION()
+01.21:13.01.51 INFO	ru.sfedu.accounting.Models.Model:37 - java.lang.NoSuchMethodException: ru.sfedu.accounting.Models.Technic.getPRIMARY_KEY()

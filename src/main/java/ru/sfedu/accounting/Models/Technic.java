@@ -14,9 +14,9 @@ public class Technic extends PostgresCRUD implements Model{
     private Date created;
     private Date updated;
 
-    protected static final String TECHNIC_RELATION = "Technic";
+    public static final String TECHNIC_RELATION = "Technic";
     protected final String PRIMARY_KEY = "individualNumber";
-    Technic(String individualNumber, String type, boolean isComputer, String workingPlace, String ownerINN){
+    public Technic(String individualNumber, String type, boolean isComputer, String workingPlace, String ownerINN){
         super(TECHNIC_RELATION);
         this.individualNumber = individualNumber;
         this.type = type;
@@ -34,7 +34,7 @@ public class Technic extends PostgresCRUD implements Model{
         return type;
     }
 
-    public boolean isComputer() {
+    public boolean getIsComputer() {
         return isComputer;
     }
 
@@ -118,6 +118,6 @@ public class Technic extends PostgresCRUD implements Model{
 
     @Override
     public String keyGet() {
-        return individualNumber;
+        return PRIMARY_KEY;
     }
 }

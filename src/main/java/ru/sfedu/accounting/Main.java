@@ -1,6 +1,8 @@
 package ru.sfedu.accounting;
 import org.apache.log4j.Logger;
+import ru.sfedu.accounting.Models.Technic;
 import ru.sfedu.accounting.Models.User;
+import ru.sfedu.accounting.PostgresAPI.Create;
 import ru.sfedu.accounting.PostgresAPI.Read;
 
 import java.lang.reflect.Method;
@@ -23,6 +25,8 @@ public class Main {
         if (!DEBUG){
             Logger.getRootLogger().removeAppender("stdout");
         }
+        boolean initialisationSuccessful = Create.initialisation();
+        logger.info("Инициализация - " + initialisationSuccessful);
         String version = "0.1";
         String helloMessage = "Добро пожаловать в программу учета v %s,\n чтобы узнать команды, введите help".formatted(version);
         System.out.println(helloMessage);
@@ -41,6 +45,9 @@ public class Main {
             }
             else if (params[0].equals("user")){
                 userMenu();
+            }
+            else if (params[0].equals("technic")){
+                technicMenu();
             }
         }
     }
@@ -209,6 +216,113 @@ public class Main {
             }
         }
     }
+    private static void technicMenu() {
+        String add = "add (Инвентарный номер, Тип, Компьютер (true/false), Рабочее место, ИНН владельца) - добавляет новую технику";
+        String update = "update (Инвентарный номер, параметр, новое значение) - обновляет информацию о технике";
+        String delete = "delete (Инвентарный номер) - удаляет технику по указанному инвентарному номеру";
+        String read = "read (Инвентарный номер) - выводит информацию о технике с указанным инвентарным номером";
+        String list = "list - выводит список всей техники";
+
+        System.out.println("Меню управления техникой:");
+        System.out.println(add);
+        System.out.println(update);
+        System.out.println(delete);
+        System.out.println(read);
+        System.out.println(list);
+
+        while (true) {
+            Scanner sc = new Scanner(System.in);
+            String line = sc.nextLine();
+            String[] query = line.split(" ");
+            boolean queryResult = false;
+
+            if (query.length == 0)
+                continue;
+            else if (query[0].equals("add")) {
+                queryResult = addTechnic(query);
+            } else if (query[0].equals("list")) {
+                Read PSQLRead = new Read(Technic.TECHNIC_RELATION);
+                queryResult = !PSQLRead.select("*").isEmpty();
+                if (queryResult) {
+                    Optional<ResultSet> resultSet = PSQLRead.select("*");
+                    printSelect(resultSet);
+                }
+            } else if (query[0].equals("delete")) {
+                queryResult = deleteTechnic(query);
+            } else if (query[0].equals("update")) {
+                queryResult = updateTechnic(query);
+            } else if (query[0].equals("read")) {
+                queryResult = readTechnic(query);
+            }
+
+            if (!queryResult) {
+                System.out.println("Ошибка в записи");
+            } else {
+                System.out.println("Команда успешно выполнена");
+            }
+        }
+    }
+
+    private static boolean addTechnic(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 5)
+            return false;
+
+        String individualNumber = params.get(0);
+        String type = params.get(1);
+        boolean isComputer = Boolean.parseBoolean(params.get(2));
+        String workingPlace = params.get(3);
+        String ownerINN = params.get(4);
+
+        Technic technic = new Technic(individualNumber, type, isComputer, workingPlace, ownerINN);
+        return technic.insertRecord();
+    }
+
+    private static boolean deleteTechnic(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 1)
+            return false;
+
+        String individualNumber = params.get(0);
+        Technic technic = new Technic(individualNumber, "", false, "", "");
+        return technic.deleteRecord();
+    }
+
+    private static boolean updateTechnic(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 3)
+            return false;
+
+        String individualNumber = params.get(0);
+        String attr = params.get(1);
+        String newValue = params.get(2);
+
+        Technic technic = new Technic(individualNumber, "", false, "", "");
+        Class<?> c = technic.getClass();
+
+        try {
+            Method m = c.getMethod("set" + attr.substring(0, 1).toUpperCase() + attr.substring(1), String.class);
+            m.invoke(technic, newValue);
+            technic.updateRecord();
+        } catch (Exception e) {
+            logger.info(e);
+            return false;
+        }
+        return technic.updateRecord();
+    }
+
+    private static boolean readTechnic(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 1)
+            return false;
+
+        String individualNumber = params.get(0);
+        Technic technic = new Technic(individualNumber, "", false, "", "");
+        Read PSQLread = new Read(Technic.TECHNIC_RELATION);
+        printSelect(PSQLread.where("*", technic.keyGet(), technic.getItems().get(technic.keyGet())));
+        return true;
+    }
+
 
 
 

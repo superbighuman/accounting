@@ -42,7 +42,11 @@ public class Create extends PostgresBaseClass implements ICreate{
         boolean result;
         result = createUserTable();
         results.add(result);
-        result = createUpdatingTrigger();
+        result = createUserUpdatingTrigger();
+        results.add(result);
+        result = createTechnicTable();
+        results.add(result);
+        result = createTechnicUpdatingTrigger();
         results.add(result);
         return results.stream().reduce(true,(start, cur) -> (start && cur));
     }
@@ -51,7 +55,7 @@ public class Create extends PostgresBaseClass implements ICreate{
     public boolean addKey(String tableFrom, String attr, String foreignKey) {
         return false;
     }
-    protected static boolean createUpdatingTrigger(){
+    protected static boolean createUserUpdatingTrigger(){
         PSQLConn psqlConn = new PSQLConn();
         Statement statement = psqlConn.getStatement();
         String query = """
@@ -98,6 +102,54 @@ public class Create extends PostgresBaseClass implements ICreate{
             return false;
         }
     }
+    protected static boolean createTechnicTable(){
+        PSQLConn psqlConn = new PSQLConn();
+        Statement statement = psqlConn.getStatement();
+        String query = """
+                   CREATE TABLE IF NOT EXISTS technic (
+                     individualNumber varchar(50) PRIMARY KEY,
+                     type VARCHAR(50),
+                     isComputer boolean ,
+                     workingPlace VARCHAR(50),
+                     ownerInn varchar(12),
+                     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                     updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                   );
+                
+                """;
+        try {
+            statement.execute(query);
+            return true;
+        } catch (SQLException e) {
+            logger.info(e);
+            return false;
+        }
+    }
+    protected static boolean createTechnicUpdatingTrigger(){
+        PSQLConn psqlConn = new PSQLConn();
+        Statement statement = psqlConn.getStatement();
+        String query = """
+                   CREATE OR REPLACE FUNCTION update_updated_column()
+                     RETURNS TRIGGER AS $$
+                     BEGIN
+                         NEW.updated = CURRENT_TIMESTAMP;
+                         RETURN NEW;
+                     END;
+                     $$ LANGUAGE plpgsql;
+                
+                     CREATE TRIGGER update_technic_updated
+                     BEFORE UPDATE ON technic
+                     FOR EACH ROW
+                     EXECUTE FUNCTION update_updated_column();
+                """;
+        try {
+            statement.execute(query);
+            return true;
+        } catch (SQLException e) {
+            logger.info(e);
+            return false;
+        }
+    }
     public boolean insertRecord(Model model){
         ArrayList<String> values = model.getFieldsValues();
         PSQLConn conn = new PSQLConn();
@@ -105,7 +157,7 @@ public class Create extends PostgresBaseClass implements ICreate{
         String newInsertQuery = insertQuery;
         newInsertQuery = newInsertQuery.replace(ATTRIBUTES_PLACE_HOLDER, String.join(", ", values));
         try {
-            statement.executeQuery(newInsertQuery);
+            statement.execute(newInsertQuery);
             return true;
         }
         catch (Exception e){
