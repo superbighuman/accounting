@@ -1,5 +1,6 @@
 package ru.sfedu.accounting;
 import org.apache.log4j.Logger;
+import ru.sfedu.accounting.Models.Request;
 import ru.sfedu.accounting.Models.Technic;
 import ru.sfedu.accounting.Models.User;
 import ru.sfedu.accounting.PostgresAPI.Create;
@@ -8,10 +9,7 @@ import ru.sfedu.accounting.PostgresAPI.Read;
 import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -48,6 +46,9 @@ public class Main {
             }
             else if (params[0].equals("technic")){
                 technicMenu();
+            }
+            else if (params[0].equals("request")){
+                requestMenu();
             }
         }
     }
@@ -322,6 +323,116 @@ public class Main {
         printSelect(PSQLread.where("*", technic.keyGet(), technic.getItems().get(technic.keyGet())));
         return true;
     }
+    private static void requestMenu() {
+        String add = "add (Тело запроса, Статус, ИНН владельца, ИНН менеджера) - добавляет новый запрос";
+        String update = "update (ID, параметр, новое значение) - обновляет информацию о запросе";
+        String delete = "delete (ID) - удаляет запрос по указанному ID";
+        String read = "read (ID) - выводит информацию о запросе с указанным ID";
+        String list = "list - выводит список всех запросов";
+
+        System.out.println("Меню управления запросами:");
+        System.out.println(add);
+        System.out.println(update);
+        System.out.println(delete);
+        System.out.println(read);
+        System.out.println(list);
+
+        while (true) {
+            Scanner sc = new Scanner(System.in);
+            String line = sc.nextLine();
+            String[] query = line.split(" ");
+            boolean queryResult = false;
+
+            if (query.length == 0)
+                continue;
+            else if (query[0].equals("add")) {
+                queryResult = addRequest(query);
+            } else if (query[0].equals("list")) {
+                Read PSQLRead = new Read(Request.REQUEST_RELATION);
+                queryResult = !PSQLRead.select("*").isEmpty();
+                if (queryResult) {
+                    Optional<ResultSet> resultSet = PSQLRead.select("*");
+                    printSelect(resultSet);
+                }
+            } else if (query[0].equals("delete")) {
+                queryResult = deleteRequest(query);
+            } else if (query[0].equals("update")) {
+                queryResult = updateRequest(query);
+            } else if (query[0].equals("read")) {
+                queryResult = readRequest(query);
+            }
+
+            if (!queryResult) {
+                System.out.println("Ошибка в записи");
+            } else {
+                System.out.println("Команда успешно выполнена");
+            }
+        }
+    }
+
+    private static boolean addRequest(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 4)
+            return false;
+
+        String body = params.get(0);
+        String status = params.get(1);
+        String ownerINN = params.get(2);
+        String managerINN = params.get(3);
+
+        Request request = new Request(body, status, ownerINN, managerINN);
+        return request.insertRecord();
+    }
+
+    private static boolean deleteRequest(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 1)
+            return false;
+
+        String id = params.get(0);
+        Request request = new Request("", "", "", "");
+        request.setId(UUID.fromString(id));
+        return request.deleteRecord();
+    }
+
+    private static boolean updateRequest(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 3)
+            return false;
+
+        String id = params.get(0);
+        String attr = params.get(1);
+        String newValue = params.get(2);
+
+        Request request = new Request("", "", "", "");
+        request.setId(UUID.fromString(id));
+        Class<?> c = request.getClass();
+
+        try {
+            Method m = c.getMethod("set" + attr.substring(0, 1).toUpperCase() + attr.substring(1), String.class);
+            m.invoke(request, newValue);
+            request.updateRecord();
+        } catch (Exception e) {
+            logger.info(e);
+            return false;
+        }
+        return request.updateRecord();
+    }
+
+    private static boolean readRequest(String[] query) {
+        ArrayList<String> params = prepareParams(query);
+        if (params.size() != 1)
+            return false;
+
+        String id = params.get(0);
+        Request request = new Request("", "", "", "");
+        request.setId(UUID.fromString(id));
+        Read PSQLread = new Read(Request.REQUEST_RELATION);
+        printSelect(PSQLread.where("*", request.keyGet(), request.getId().toString()));
+        return true;
+    }
+
+
 
 
 

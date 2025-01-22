@@ -16,8 +16,8 @@ public class Request extends PostgresCRUD implements Model{
     private String ownerINN;
     private String managerINN;
     private final static String PRIMARY_KEY = "id";
-    private final static String REQUEST_RELATION = "request";
-    Request(String body, String status, String ownerINN, String managerINN){
+    public final static String REQUEST_RELATION = "request";
+    public Request(String body, String status, String ownerINN, String managerINN){
         super(REQUEST_RELATION);
         this.body = body;
         this.status = status;
